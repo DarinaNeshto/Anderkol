@@ -1,0 +1,531 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr 1.5fr 0.5fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "podfooter podfooter podfooter"
+      "footer footer footer";
+    width: 100%;
+    height: 100%;
+  }
+  
+  .header { grid-area: header; }
+  
+  .main { grid-area: main; }
+  
+  .podfooter { grid-area: podfooter; }
+  
+  .footer { grid-area: footer; }
+  
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+ 
+    mix-blend-mode: multiply;
+    
+  }
+
+  .for_baack{
+    background: linear-gradient(to right, rgba(49, 0, 197, 0.6), rgba(49, 0, 197, 0.6)), url(../img/tunnel.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% 100%;
+    height: 100%;
+  }
+
+  .for_back{
+    background:  linear-gradient(180deg, #6A3CF6 0%, rgba(152, 100, 250, 0.557292) 99.99%, rgba(209, 151, 255, 0) 100%), url(../img/klya.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 100%;
+    height: 100%;
+  }
+    
+  /* For presentation only, no need to copy the code below */
+  
+
+  
+  .container *:after {
+
+    top: 0;
+    left: 0;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo{
+    width: 40px;
+    height: 40px;
+    padding: 12px 0 0 100px;
+  }
+
+  .header{
+    width: 100%;
+    display: flex;
+    height: 65px;
+    background-color: rgba(170, 31, 255, 0.71);
+    opacity: 0.7;
+    font-family: 'Source Code Pro';
+    position: fixed;
+  }
+
+  .about_us{
+    padding: 25px 0 0 40px;
+  }
+
+  .tickets{
+    display: inline-block;
+    padding: 25px 0 0 70%;
+  }
+  .links{
+    color: #000 !important;
+    text-decoration:none;
+  }
+  .links-white{
+    color: #fff !important;
+    text-decoration:none;
+  }
+
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.menu{
+  padding: 0 0 0 1%;
+}
+ul.menu > li {
+
+  right: 0;
+  padding: 25px 0px 0 0;
+}
+ul.menu > li > a {
+    
+    text-decoration: none;
+}
+
+ul.submenu {
+    display: none;
+
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+    text-align: center;
+    margin-top: 9px ;
+    margin-left: -35px;
+}
+
+@font-face {
+  font-family: "Source Code Pro regular"; 
+  src: url("../font/SourceCodePro-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+@font-face {
+  font-family: "Source Code Pro"; 
+  src: url("../font/SourceCodePro-SemiBold.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+.big-text{
+  font-family: Source Code Pro;
+  font-size: 116px;
+  font-style: normal;
+  color: transparent;
+   -webkit-text-stroke: 1px white;
+   -webkit-text-fill-color: none;
+
+   padding: 5% 5% 0 6%
+}
+
+.not_very_big_text{
+  font-family: 'Source Code Pro';
+  font-size: 52px;
+  font-style: normal;
+  color: transparent;
+   -webkit-text-stroke: 1px white;
+   -webkit-text-fill-color: none;
+   padding: 0 5% 0 6%
+}
+
+.buy_ticket{
+  width: 18.5%;
+  height: 51px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+  margin-left: 6%;
+  margin-top: 6%;
+  font-family: Source Code Pro;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.centre-text{
+  font-family: 'Source Code Pro regular';
+  line-height: 250%;
+  height: 100%;
+}
+.buy-dotes{
+  display: flex;
+}
+.dotes{
+  color: white;
+  font-size: 80px;
+  margin-right: 200px;
+}
+.cell-dotes{
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2vw;
+  
+}
+.podfooter{
+  display: flex;
+}
+.lections{
+  color: white;
+  font-family: 'Source Code Pro';
+  font-size: 42px;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-right: 5%;
+  font-style: normal;
+}
+.trible{
+  color: white;
+  font-family: 'Source Code Pro regular';
+  font-style: normal;
+  font-size: 24px;
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 5%;
+}
+.master-class{
+  color: white;
+  font-family: 'Source Code Pro regular';
+  font-size: 24px;
+  margin-top: 3%;
+  margin-left: 25%;
+  font-style: normal;
+  width: 50%;
+}
+.button-come{
+  display: none;
+}
+
+
+@media (max-width: 1350px){
+  
+  .dotes{
+    margin-right: 33%;
+  }
+  .tickets{
+    padding: 25px 0 0 50%;;
+  }
+}
+.dotes-anderkol{
+  display: none;
+}
+@media (max-width: 950px){
+  
+  .cell-dotes{
+    display: none;
+  }
+  .dotes{
+    display: none;
+  }
+  .big-text{
+    font-size: 92px;
+    text-align: center;
+  }
+  .not_very_big_text{
+    font-size: 32px;
+    text-align: center;
+    color: transparent;
+    margin-top: 5%;
+   -webkit-text-fill-color: white;
+  }
+  .buy_ticket{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dotes-anderkol{
+    display: block;
+    width: 80%;
+    background-repeat: no-repeat;
+    margin-top: -20.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 800px){
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    padding: 12px 0 0 4%;
+  }
+  .about_us {
+    padding: 25px 0 0 3%;
+  }
+  .tickets {
+  padding: 25px 0 0 15%;
+  }
+  .menu{
+    padding: 0 0 0 3%;
+  } 
+  .header{
+    justify-content: center;
+  }
+  .podfooter{
+    display: block;
+  }
+  .lections{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+  }
+  .button-go{
+    margin-top: 5%;
+    display: flex;
+    background-color: #AA1FFF;
+    width: 70%;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 69px;
+  }
+  .master-class{
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 6%;
+    font-style: normal;
+    width: 100%;
+    font-size: 14px;
+  }
+  .trible{
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 6%;
+    font-style: normal;
+    width: 100%;
+    font-size: 14px;
+    margin-right: 20%;
+  }
+  .main{
+    margin-top: 10%;
+    height: 70%;
+  }
+  .not_very_big_text{
+    margin-top: 0%;
+    font-size: 24px;
+  }
+
+  .button-come{
+    display: block;
+    color: black;
+    font-family: 'Source Code Pro regular';
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    border-radius: 4px;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 2%;
+    margin-right: 5%;
+  }
+ 
+}
+
+@media (max-width: 500px){
+  .big-text{
+    font-size: 60px;
+  }
+  .logoimg{
+    width: 30px;
+    height: 30px;
+    margin-top: 25%;
+  }
+}
+
+.big-text-trible-master{
+  position: absolute;
+  width: 25%;
+  height: 115px;
+  margin-left: 6%;
+  top: 120px;
+  font-family: 'Source Code Pro regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 68px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+.not-big-text-trible-master{
+  position: absolute;
+  width: 30%;
+  height: 200px;
+  left: 6%;
+  top: 330px;
+  line-height: 30px;
+  font-family: 'Source Code Pro regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.autorization-form{
+  
+  background-color: #AA1FFF;
+  position: absolute;
+  
+  width: 45%;
+  height: 550px;
+  left: 49%;
+  top: 90px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: #000;
+  font-family: 'Source Code Pro regular';
+}
+.name{
+  display: flex;
+  color: #fff;
+  margin-left: 5%;
+  margin-top: 10%;
+  line-height: 30px;
+}
+.button-auth{
+  cursor: pointer;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+  height: 15%;
+  line-height: 75px;
+  font-size: 26px;
+  margin-top: 10%;
+  font-family: 'Source Code Pro';
+}
+.input{
+  width: 60%;
+  height: 40px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+.text{
+  font-size: 25px;
+  top: 25%;
+  width: 25%;
+}
+
+@media (max-width: 1200px){
+  .autorization-form{
+    left: 55%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px){
+  
+  .big-text-trible-master{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    font-size: 30px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .not-big-text-trible-master{
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    font-size: 35px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .autorization-form{
+    margin-top: 400px;
+    width: 70%;
+    left: 0;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+
+}
+
+.footer{
+  display: flex;
+  background-color: #D197FF;
+  width: 100%;
+  height: 45px;
+  margin-top: 5%;
+}
+.ig-img{
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 6%;
+}
+.foot-text{
+  font-family: 'Source Code Pro regular' ;
+  font-size: 13px;
+  color: #fff;
+  margin-left: 6%;
+  margin-top: 1%;
+}
